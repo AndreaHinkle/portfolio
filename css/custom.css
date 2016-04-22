@@ -1,0 +1,177 @@
+body {background-color: #666;} 
+
+header { 
+  padding:1.6rem;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4f536e+0,896b84+100 */
+  background: #4f536e; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #4f536e 0%, #896b84 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  #4f536e 0%,#896b84 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  #4f536e 0%,#896b84 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f536e', endColorstr='#896b84',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+nav .button.button-primary {
+  background-color:#FCB400;
+  border-color:#4f536e;
+  color:#a44c4c;
+  padding: 0 1.5rem;
+  margin: 0 .5rem;
+}
+
+.button.button-primary:hover,
+button.button-primary:hover {
+  background-color:#a44c4c;
+  border-color:#4f536e;
+}
+
+/* Utility */
+
+.centered {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.horizontal-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+.vertical-centered {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.centered-heading {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  padding-top: 4rem;
+  margin: 0rem;
+}
+
+.centered-description {
+  text-align: center;
+  padding-bottom: 3rem;
+  margin: 0rem;
+}
+
+/* Typography */
+
+header h1 {
+  color:#FCB400;
+text-align: center;
+}
+
+
+
+/* Work Filters */
+ 
+.work-filters {
+  list-style: none;
+}
+.work-filters li {
+  display: inline-block;
+  margin: 0 .5em;
+  font-size: 18px;
+  text-transform: uppercase;
+
+}
+.work-filters li a {
+  color: inherit;
+  text-decoration: none;
+}
+.work-filters li.active {
+
+}
+
+
+/* Work items */
+ 
+.work-items {
+  list-style: none;
+  width: 100%;
+  display: inline-block;
+}
+.work-items li {
+  position: relative;
+  overflow: hidden;
+  height: 230px;
+  width: 50%;
+ 
+  /* important because we need to overwrite the default skeleton */
+  margin: 0!important;
+  position: relative;
+}
+
+.work-items li img{
+  width: auto;
+  height: 100%;
+  display: block;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+
+/* Work detail */
+ 
+.work-detail {
+  position: absolute;
+  top: 0; bottom: 0; left: 230px; right: 0;
+  color: #000;
+  width:230px;
+  background-color:#fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.work-detail h3 {
+  font-size: 16px;
+  letter-spacing: .05em;
+}
+.work-detail p {
+  font-size: 20px;
+  text-transform: capitalize;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+ 
+.work-items li:hover .work-hover{
+  opacity: 1;
+  border-radius: 10px;
+
+}
+
+.work-hover img {border-radius: 10px;}
+
+.work-hover {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  opacity: 0;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+
+}
+
+/* Footer */
+
+footer {
+  height: 100px;
+  text-align: center;
+}
+
+/* Media */
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (max-width: 550px) {}
