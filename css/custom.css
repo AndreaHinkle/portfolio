@@ -121,6 +121,18 @@ h1 a:link, h1 a:visited, h1 a:hover {
   color:#e5e5dc;
 }
 
+header h2 {
+  color:#e5e5dc;
+  text-align: center;
+  font-family: Raleway; 
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
 h2 { 
   font-family: InkheartText; 
   font-weight: normal; 
@@ -238,7 +250,7 @@ footer {
 
 /* About */
 
-.about img {
+section img {
   width: 100%
 }
 
