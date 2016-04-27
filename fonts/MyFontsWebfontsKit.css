@@ -1,0 +1,42 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3208727, 2016-04-24T20:06:21-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: InkheartPirate by Fenotype
+ * URL: http://www.myfonts.com/fonts/fenotype/inkheart/pirate/
+ * Copyright: Copyright (c) 2016 by Emil Bertell. All rights reserved.
+ * 
+ * Webfont: InkheartText by Fenotype
+ * URL: http://www.myfonts.com/fonts/fenotype/inkheart/text/
+ * Copyright: Copyright (c) 2016 by Emil Bertell. All rights reserved.
+ * 
+ * Webfont: InkheartWideBrushDry-Regular by Fenotype
+ * URL: http://www.myfonts.com/fonts/fenotype/inkheart/wide-brush-dry/
+ * Copyright: Copyright \(c\) 2016 by . All rights reserved.
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3208727
+ * Licensed pageviews: 10,000
+ * 
+ * © 2016 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/30f617");
+
+  
+@font-face {font-family: 'InkheartPirate';src: url('webfonts/30F617_0_0.eot');src: url('webfonts/30F617_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/30F617_0_0.woff2') format('woff2'),url('webfonts/30F617_0_0.woff') format('woff'),url('webfonts/30F617_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'InkheartText';src: url('webfonts/30F617_1_0.eot');src: url('webfonts/30F617_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/30F617_1_0.woff2') format('woff2'),url('webfonts/30F617_1_0.woff') format('woff'),url('webfonts/30F617_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'InkheartWideBrushDry-Regular';src: url('webfonts/30F617_2_0.eot');src: url('webfonts/30F617_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/30F617_2_0.woff2') format('woff2'),url('webfonts/30F617_2_0.woff') format('woff'),url('webfonts/30F617_2_0.ttf') format('truetype');}
+ 
