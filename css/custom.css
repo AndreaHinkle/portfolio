@@ -149,6 +149,12 @@ h3 {
   line-height: 4rem;
 }
 
+i {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 4rem;
+}
+
 .bottom-margin {margin-bottom: 4rem;}
 
 /* Work Filters */
