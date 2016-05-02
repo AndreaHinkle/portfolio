@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Contact Andrea Hinkle: UX and FrontEnd Designer</title>
+  <title>Andrea Hinkle: UX and FrontEnd Designer</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
 
-    <!-- Typography –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Typography –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
   <!--
 /**
@@ -63,6 +63,25 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+<!-- Fancybox -->
+
+<!-- Add jQuery library -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
 </head>
 <body>
@@ -89,59 +108,68 @@
       </div>
     </div>
 </header>
-</header>
 
-
-<section class="about">
+<section class="intro">
   <div class="container">
-  <h2 class="centered-subheading">Contact Andrea</h2>
-  
     <div class="row">
-      <div class="offset-by-two eight columns">
-        <form>
-          <div class="row">
-            <div class="six columns">
-              <label for="exampleEmailInput">Your email</label>
-              <input class="u-full-width" type="email" placeholder="Test@TestEmail.com" id="exampleEmailInput">
-            </div>
-            <div class="six columns">
-              <label for="exampleRecipientInput">Reason for contacting</label>
-              <select class="u-full-width" id="exampleRecipientInput">
-                <option value="Option 1">Questions</option>
-                <option value="Option 2">Admiration</option>
-                <option value="Option 3">Can I get your number?</option>
-              </select>
-            </div>
-          </div>
-          <label for="exampleMessage">Message</label>
-          <textarea class="u-full-width" placeholder="Hi Andrea …" id="exampleMessage"></textarea>
-          <label class="example-send-yourself-copy">
-            <input type="checkbox">
-            <span class="label-body">Send a copy to yourself</span>
-          </label>
-          <input class="button button-primary" type="submit" value="Submit">
-        </form>
+      <div class="twelve columns">
+        <h2>Banana Lock</h2>
+        <h4 class="title">Project: Banana Lock - Fictional One Page Product Site</h4>
+        <img class="hero" src="images/bananalock/homepage.png">
+        <p><strong><a href="http://andreahinkle.github.io/bananas/">View Github Prototype</a></strong></p>
 
-      </div>
-    </div>
-    <h3 class="centered-subheading">Social whatnots</h3>
-    <div class="row">
-      <div class="offset-by-two eight columns">
-      <div class="icons centered">
-        <a href="https://twitter.com/AndreaHinkleStL"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com/in/andreahinkle"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-        <a href="https://www.youtube.com/channel/UCfe5fs0TWe_q30wn2hcky8g"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
-        <a href="https://github.com/AndreaHinkle"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+
       </div>
     </div>
   </div>
-</div>
 </section>
+        
+
+<section class="description">
+  <div class="container">
+    <div class="row">
+      <div class="offset-by-two eight columns">
+
+        <p><strong>Team members:</strong>
+          <ul>
+            <li>Designer (myself)</li>
+            <li>My role: Design, coding, and writing.</li>
+          </ul>
+     
+
+       <strong>Situation:</strong>
+          <ul>
+            <li>I was looking for a funny way to make a one-page product design and started playing around with the idea of home security</li>
+          </ul>
+        </p>
+    </div>
+  </div>
+</section>
+      
+
+
+
+
 
 
 
 
 <footer><p>Thanks for reading! - Andrea</p></footer>
+
+
+
+<script type="text/javascript">
+$(".fancybox").fancybox({
+    beforeShow : function() {
+        var alt = this.element.find('img').attr('alt');
+        
+        this.inner.find('img').attr('alt', alt);
+        
+        this.title = alt;
+    }
+});
+
+</script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -153,7 +181,6 @@
   ga('send', 'pageview');
 
 </script>
-
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

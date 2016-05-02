@@ -63,6 +63,25 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+<!-- Fancybox -->
+
+<!-- Add jQuery library -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
 </head>
 <body>
@@ -93,39 +112,71 @@
 <section class="intro">
   <div class="container">
     <div class="row">
-      <div class="offset-by-two eight columns">
-        <h2>Welcome</h2>
-        <p>I'm a web designer-turned videographer and motionographer-turned UX and frontend designer. I have training in design, animation, and UX. It's been a long, strange trip! I love solving problems - maybe I can solve some of yours?</p>
+      <div class="twelve columns">
+        <h2>Nevermore</h2>
+        <h4 class="title">Project: Nevermore - an online graphic t shirt retailer created as a student project</h4>
+        <p><strong><a href="https://invis.io/5X5UB8Y3S">View Invision mockup</a></strong></p>
+        <img class="hero" src="images/nevermore/homepage-desktop.png">
+
+
       </div>
+    </div>
+<h4>Click to enlarge</h4>
+
+    <div class="row centered lightbox">
+      <div class="three columns portfolio u-max-full-width"><a rel="fancybox-button" class="fancybox" href="images/nevermore/homepage-mobile.png"><img src="images/nevermore/sm-homepage-mobile.png" alt="Mobile homepage" /></a></div>
+      <div class="three columns portfolio u-max-full-width"><a rel="fancybox-button" class="fancybox" href="images/nevermore/category-desktop.png"><img src="images/nevermore/sm-category-desktop.png" alt="Categories page" /></a></div>
+      <div class="three columns portfolio u-max-full-width"><a rel="fancybox-button" class="fancybox" href="images/nevermore/product.png"><img src="images/nevermore/sm-product.png" alt="Product page" /></a></div>
+      <div class="three columns portfolio u-max-full-width"><a rel="fancybox-button" class="fancybox" href="images/nevermore/checkout.png"><img src="images/nevermore/sm-checkout.png" alt="Checkout" /></a></div>
     </div>
   </div>
 </section>
+        
 
-<section id="portfolio">
+<section class="description">
   <div class="container">
     <div class="row">
-      <div class="twelve columns">
-        <h2>My Work</h2>
-        <a name="portfolio"></a>
-      </div>
+      <div class="offset-by-two eight columns">
+
+        <p><strong>Team members:</strong>
+          <ul>
+            <li>Designer (myself), and my UX mentor</li>
+            <li>My role: Design</li>
+          </ul>
+     
+
+       <strong>Situation:</strong>
+          <ul>
+            <li>Users should have access to a high quality, responsive shopping experience.</li>
+            <li>I determined that providing a simplified version of the Threadless experience would be a boon, as they’re known for high quality but have grown into so many different product lines that navigating threadless.com can be confusing.</li>
+          </ul>
+        
+
+        <strong>Action:</strong>
+          <ul>
+            <li>I created a competitive analysis of 3 other top competitors in the space, to determine a way that this shop could set itself apart. I also wanted to make sure that the newsletter sign up was prominent, as it’s easier to sell to people who are already familiar with you than it is to attract new site visitors.</li>
+          </ul>
+        
+
+        <strong>UX/UI Deliverables:</strong>
+          <ul>
+            <li>Competitive analysis</li>
+            <li>Wireframes</li>
+            <li>Sample product designs</li>
+          </ul>
+       
+
+        <strong>Results:</strong>
+          <ul>
+            <li>HD wireframes and invision prototype</li>
+          </ul>
+        </p>
     </div>
-
-    <div class="row">
-      <div class="six columns portfolio u-max-full-width"><a href="explorer.html"><img src="images/explorer/project-explorer.png"></a></div>
-      <div class="six columns portfolio u-max-full-width"><a href="banana.html"><img src="images/bananalock/product-banana.jpg"></a></div>
-    </div>
-
-
-    <div class="row">
-      <div class="six columns portfolio u-max-full-width"><a href="foxbox.html"><img src="images/foxbox/project-foxbox.png"></a></div>
-      <div class="six columns portfolio u-max-full-width"><a href="nevermore.html"><img src="images/nevermore/project-nevermore.png"></a></div>
-    </div>
-
-
-
-
-  </div>             
+  </div>
 </section>
+      
+
+
 
 
 
@@ -133,6 +184,21 @@
 
 
 <footer><p>Thanks for reading! - Andrea</p></footer>
+
+
+
+<script type="text/javascript">
+$(".fancybox").fancybox({
+    beforeShow : function() {
+        var alt = this.element.find('img').attr('alt');
+        
+        this.inner.find('img').attr('alt', alt);
+        
+        this.title = alt;
+    }
+});
+
+</script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -144,7 +210,6 @@
   ga('send', 'pageview');
 
 </script>
-
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

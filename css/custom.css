@@ -181,7 +181,7 @@ a {color:#896b84;}
 
 .lightbox img:hover{ opacity: 0.5;}
 
-.lightbox img{ max-width:200px; }
+.lightbox img{max-width:200px;}
 
 .hero {
   margin-bottom: 4rem;
@@ -224,6 +224,5 @@ section img {
     padding: 0 .9rem;
     margin: 0 .1rem;
   }
-
 
 }
